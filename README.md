@@ -1,9 +1,5 @@
 # ZeraChat - Secure Messaging Platform
 
-[![CI/CD](https://github.com/your-org/zerachat/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/your-org/zerachat/actions/workflows/ci-cd.yml)
-[![Security Scan](https://img.shields.io/badge/security-passing-brightgreen)]()
-[![Vulnerabilities](https://img.shields.io/badge/vulnerabilities-0-brightgreen)]()
-[![License](https://img.shields.io/badge/license-MIT-blue)]()
 
 ## 📋 Overview
 
