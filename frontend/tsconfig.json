@@ -34,9 +34,8 @@
     "forceConsistentCasingInFileNames": true,
 
     /* Пути */
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*", "./*"]
     },
     
     /* Vitest types */

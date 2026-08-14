@@ -1,5 +1,6 @@
 import argon2 from 'argon2';
 import { randomInt } from 'node:crypto';
+import type { HashOptions } from 'argon2';
 
 /**
  * Argon2id parameters per OWASP 2023 recommendations:
@@ -16,7 +17,7 @@ import { randomInt } from 'node:crypto';
  * registers on a dev or prod instance, and `verifyPassword` works
  * regardless of where the hash was created.
  */
-const HASH_OPTIONS = {
+const HASH_OPTIONS: HashOptions = {
   type: argon2.argon2id,
   memoryCost: 65536, // 64 MB
   timeCost: 3,
