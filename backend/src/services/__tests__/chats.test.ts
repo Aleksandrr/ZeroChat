@@ -128,8 +128,8 @@ describe('Chat Service - Unit Tests', () => {
       const groupChat = await createGroupChat({
         currentUserId: testUserId1,
         name: 'Test Group',
-        participantUsernames: [testUsername2],
-        description: 'Test group for permissions'
+        participantUsernames: [testUsername2]
+        // description field removed from schema
       });
       groupChatId = groupChat.id;
     });
@@ -200,8 +200,8 @@ describe('Chat Service - Unit Tests', () => {
       const groupChat = await createGroupChat({
         currentUserId: testUserId1,
         name: 'Management Test Group',
-        participantUsernames: [], // Пустой список - только создатель
-        description: 'Test group for management operations'
+        participantUsernames: [] // Пустой список - только создатель
+        // description field removed from schema
       });
       groupChatId = groupChat.id;
       
@@ -300,8 +300,8 @@ describe('Chat Service - Unit Tests', () => {
       const deletedChat = await prisma.chat.findUnique({
         where: { id: tempGroup.id }
       });
-      // Depending on implementation, might be soft deleted
-      expect(deletedChat === null || deletedChat.deletedAt !== null).toBe(true);
+      // Chat is hard deleted in current implementation
+      expect(deletedChat).toBeNull();
     });
   });
 });
@@ -353,8 +353,8 @@ describe('Chat Service - Integration Tests', () => {
     const group = await createGroupChat({
       currentUserId: userId1,
       name: 'Lifecycle Test Group',
-      participantUsernames: [],
-      description: 'Testing full lifecycle'
+      participantUsernames: []
+      // description field removed from schema
     });
     groupChatId = group.id;
 
@@ -479,7 +479,6 @@ describe('Chat Service - Edge Cases', () => {
       currentUserId: testUserId,
       name: 'Empty Group',
       participantUsernames: [], // Only creator
-      description: 'Group with only creator'
     });
 
     expect(group).toBeDefined();
