@@ -1,8 +1,8 @@
 {
-  "name": "zerachat-monorepo",
+  "name": "zerochat-monorepo",
   "version": "1.0.0",
   "private": true,
-  "description": "ZeraChat - Secure messaging platform",
+  "description": "ZeroChat - Secure messaging platform",
   "workspaces": [
     "backend",
     "frontend"
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/zerachat.git"
+    "url": "https://github.com/your-org/zerochat.git"
   },
   "keywords": [
     "chat",

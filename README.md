@@ -61,7 +61,7 @@ npm run dev
 
 #### Backend (.env)
 ```env
-DATABASE_URL=postgresql://user:password@localhost:5432/Zerochat
+DATABASE_URL=postgresql://user:password@localhost:5432/zerochat
 REDIS_URL=redis://localhost:6379
 JWT_SECRET=your-secret-key
 ARGON_SECRET=your-argon-secret
@@ -144,7 +144,7 @@ The project uses GitHub Actions for continuous integration and deployment:
 ## 📁 Project Structure
 
 ```
-Zerochat/
+zerochat/
 ├── backend/
 │   ├── src/
 │   │   ├── services/      # Business logic
@@ -219,7 +219,8 @@ PORT=3001
 ## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file for details.
+
 ---
 
 **Version**: 1.0.0  
-**Last Updated**: 2024
+**Last Updated**: 2026

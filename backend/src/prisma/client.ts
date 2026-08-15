@@ -5,7 +5,7 @@ const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
 };
 
-const connectionString = process.env['DATABASE_URL'] || 'postgresql://localhost:5432/zerachat';
+const connectionString = process.env['DATABASE_URL'] || 'postgresql://localhost:5432/zerochat';
 
 // Always use PostgreSQL in production - PGlite removed for production readiness
 const adapter = new PrismaPg({ 
