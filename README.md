@@ -35,8 +35,8 @@ ZeroChat is a secure, real-time messaging platform built with modern technologie
 
 ```bash
 # Clone repository
-git clone https://github.com/your-org/zerochat.git
-cd zerochat
+git clone https://github.com/Aleksandrr/Zerochat.git
+cd Zerochat
 
 # Install dependencies
 npm run install:all
@@ -220,13 +220,7 @@ PORT=3001
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 📞 Support
-
-For issues and questions:
-- GitHub Issues: https://github.com/your-org/zerochat/issues
-- Email: support@zerochat.com
-
 ---
 
 **Version**: 1.0.0  
-**Last Updated**: 2024
+**Last Updated**: 2026
