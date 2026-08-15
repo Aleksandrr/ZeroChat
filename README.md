@@ -1,9 +1,9 @@
-# ZeraChat - Secure Messaging Platform
+# ZeroChat - Secure Messaging Platform
 
 
 ## 📋 Overview
 
-ZeraChat is a secure, real-time messaging platform built with modern technologies. Features include end-to-end encryption, device verification, and role-based access control.
+ZeroChat is a secure, real-time messaging platform built with modern technologies. Features include end-to-end encryption, device verification, and role-based access control.
 
 ## 🚀 Tech Stack
 
@@ -35,8 +35,8 @@ ZeraChat is a secure, real-time messaging platform built with modern technologie
 
 ```bash
 # Clone repository
-git clone https://github.com/your-org/zerachat.git
-cd zerachat
+git clone https://github.com/your-org/zerochat.git
+cd zerochat
 
 # Install dependencies
 npm run install:all
@@ -61,7 +61,7 @@ npm run dev
 
 #### Backend (.env)
 ```env
-DATABASE_URL=postgresql://user:password@localhost:5432/zerachat
+DATABASE_URL=postgresql://user:password@localhost:5432/zerochat
 REDIS_URL=redis://localhost:6379
 JWT_SECRET=your-secret-key
 ARGON_SECRET=your-argon-secret
@@ -144,7 +144,7 @@ The project uses GitHub Actions for continuous integration and deployment:
 ## 📁 Project Structure
 
 ```
-zerachat/
+zerochat/
 ├── backend/
 │   ├── src/
 │   │   ├── services/      # Business logic
@@ -223,8 +223,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## 📞 Support
 
 For issues and questions:
-- GitHub Issues: https://github.com/your-org/zerachat/issues
-- Email: support@zerachat.com
+- GitHub Issues: https://github.com/your-org/zerochat/issues
+- Email: support@zerochat.com
 
 ---
 
