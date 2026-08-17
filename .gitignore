@@ -71,4 +71,5 @@ Thumbs.db
 .pytest_cache/
 .nyc_output/
 coverage/
+.cache/
 ```
